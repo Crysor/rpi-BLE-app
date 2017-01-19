@@ -13,10 +13,6 @@ var LoadAverageCharacteristic = function() {
  this._value = new Buffer(0);
 };
 
-LoadAverageCharacteristic.prototype.onWriteRequest = function(offset, callback) {
-  
-}
-
 LoadAverageCharacteristic.prototype.onReadRequest = function(offset, callback) {
 
   if(!offset) {
