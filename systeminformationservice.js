@@ -5,6 +5,7 @@ var LoadAverageCharacteristic = require('./characteristics/loadaverage');
 var UptimeCharacteristic = require('./characteristics/uptime');
 var MemoryCharacteristic = require('./characteristics/memory');
 var WriteDataCharacteristic = require('./characteristics/WriteData');
+var WriteNameDataCharacteristic = require('./characteristics/WriteNameData');
 
 function SystemInformationService() {
 
@@ -13,8 +14,9 @@ function SystemInformationService() {
     characteristics: [
       new LoadAverageCharacteristic(),
       new UptimeCharacteristic(),
-	new MemoryCharacteristic(),
-	new WriteDataCharacteristic()
+	     new MemoryCharacteristic(),
+       new WriteNameDataCharacteristic(),
+	      new WriteDataCharacteristic()
     ]
   });
 };
